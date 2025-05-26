@@ -200,3 +200,27 @@ p {
 .link {
   font-weight: 800;
 }
+
+.anime_actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.delete_btn {
+  background: var(--secondary-color);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.delete_btn:hover {
+  background: #ff4d6d;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 101, 132, 0.2);
+}
