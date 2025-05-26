@@ -2,14 +2,14 @@
 
 AnimeVerse is a full-stack web application that allows users to create and manage their personal anime watchlist. Built with the MERN stack (MongoDB, Express.js, React, Node.js) and Docker, it provides a modern, responsive interface for anime enthusiasts to track their favorite series.
 
-![Home Page](screenshots/home.png)
-*Home page showing the anime collection*
+![Empty Collection](screenshots/home.png)
+*Home page showing an empty collection with a welcoming message*
 
-![Add Anime Page](screenshots/add.png)
-*Add new anime to your collection*
+![Add New Anime](screenshots/add.png)
+*Add new anime to your collection with a clean, user-friendly form*
 
-![Docker Setup](screenshots/docker.png)
-*Docker configuration for easy deployment*
+![Anime Collection](screenshots/collection.png)
+*Home page displaying a curated collection of anime with watch links*
 
 ## Features
 
