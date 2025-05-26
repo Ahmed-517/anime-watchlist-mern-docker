@@ -5,10 +5,10 @@ import { useNavigate } from "react-router-dom";
 function Create() {
   const navigate = useNavigate();
 
- const [form, setForm] = useState({
-  title: "",
-  link: "",
-  description: "",
+  const [form, setForm] = useState({
+    title: "",
+    link: "",
+    description: "",
   });
 
   const handleChange = (e) => {
@@ -40,30 +40,30 @@ function Create() {
   return (
     <main className="container">
       <div className="form_area">
-      <h1 className="title">Share Anime</h1>
+        <h1 className="title">Add to Your Collection</h1>
         <form onSubmit={handleSubmit} className="form">
           <div className="form_group">
             <label htmlFor="title" className="sub_title">
-              Anime Name
+              Anime Title
             </label>
             <input
               type="text"
               className="form_style"
               id="title"
-              placeholder="Enter anime name"
+              placeholder="What's the name of the anime?"
               value={form.title}
               onChange={handleChange}
             />
           </div>
           <div className="form_group">
             <label htmlFor="link" className="sub_title">
-              Link
+              Watch Link
             </label>
             <input
               type="url"
               className="form_style"
               id="link"
-              placeholder="Enter anime link"
+              placeholder="Where can we watch this anime?"
               value={form.link}
               onChange={handleChange}
             />
@@ -76,13 +76,13 @@ function Create() {
               type="text"
               className="form_style"
               id="description"
-              placeholder="Enter your description"
+              placeholder="Tell us about this anime..."
               value={form.description}
               onChange={handleChange}
             />
           </div>
           <div>
-            <button className="btn">Submit</button>
+            <button className="btn">Add to Collection</button>
           </div>
         </form>
       </div>
