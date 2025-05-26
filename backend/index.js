@@ -36,6 +36,18 @@ app.post("/api/anime", async (req, res) => {
   res.json(anime);
 });
 
+app.delete("/api/anime/:id", async (req, res) => {
+  try {
+    const anime = await Anim.findByIdAndDelete(req.params.id);
+    if (!anime) {
+      return res.status(404).json({ message: "Anime not found" });
+    }
+    res.json({ message: "Anime deleted successfully" });
+  } catch (error) {
+    res.status(500).json({ message: "Error deleting anime", error: error.message });
+  }
+});
+
 app.listen(8000, () => {
   console.log("server listening on port 8000");
 
